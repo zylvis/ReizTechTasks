@@ -10,14 +10,14 @@ namespace Clock
         private const int minutesDegreeStep = 6;
         private const double HVsMinStep = 0.5;
 
-        public int Hours { get; set; }
-        public int Minutes { get; set; }
+        private int Hours { get; set; }
+        private int Minutes { get; set; }
 
         public Calculator(int hours, int minutes)
         {
             if (hours > 12 || hours < 1)
             {
-                throw new Exception("Entered hours are not in 1-12 range, please eneter correct hours");
+                throw new Exception("Entered hours are not in 1-12 range, please enter correct hours");
             }
             else
             {

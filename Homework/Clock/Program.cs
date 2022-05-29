@@ -4,26 +4,11 @@ namespace Clock
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            try
-            {
-                Console.WriteLine("### Clock angle app ###");
-                Console.WriteLine();
-                Console.WriteLine("Enter hours: ");
-                int hours = int.Parse(Console.ReadLine());
-                Console.WriteLine("Enter minutes: ");
-                int minutes = int.Parse(Console.ReadLine());
-
-                Calculator calculator = new Calculator(hours, minutes);
-
-                Console.WriteLine();
-                Console.WriteLine($"Arrows angle is: {calculator.GetArrowsAngle()}°");
-            }
-            catch (Exception error)
-            {
-                Console.WriteLine(error.Message);
-            }
+            Console.WriteLine("### Clock arrows angle app ###");
+            Start.StartProgram();
+            Console.WriteLine("### End ###");
         }
     }
 }
